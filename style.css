@@ -1,0 +1,26 @@
+/**************************** RESET ************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Colors */
+  --primary-color: #014d4e;
+  --secondary-color: #ff9408;
+  --secondary-color-m: #ff94088e;
+  --tertiary-color: #017374;
+  --tertiary-color-m: #01727498;
+}
+body {
+  font-family: "Baloo Tamma 2", cursive;
+  line-height: 1.8;
+  display: flex;
+}
+
+/**************************** Main Styling ************************/
