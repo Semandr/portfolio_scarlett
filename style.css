@@ -23,4 +23,47 @@ body {
   display: flex;
 }
 
+ul {
+  list-style: none;
+}
+
 /**************************** Main Styling ************************/
+
+.aside__content {
+  height: 100vh;
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+.logo__link {
+  display: flex;
+  cursor: pointer;
+}
+.logo__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.social__list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.social__item:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.social__link,
+.social__link:visited {
+  color: #fff;
+}
+
+.social__icon {
+  font-size: 3rem;
+}
