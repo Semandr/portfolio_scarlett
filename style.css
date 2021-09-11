@@ -140,3 +140,41 @@ a {
 .nav__link:active::after {
   transform: scaleX(1);
 }
+
+/**************************** Media ***********************/
+@media screen and (max-width: 610px) {
+  /******************MAIN NAV HEADER  */
+
+  .nav__content {
+    width: 30rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    /* right: 0; */
+    background-color: var(--secondary-color);
+    text-align: center;
+  }
+  .hamburger__content {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .hamburger__item {
+    width: 100%;
+    height: 0.3rem;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+}
