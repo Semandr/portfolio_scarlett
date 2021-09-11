@@ -150,8 +150,8 @@ a {
     height: 100%;
     position: fixed;
     top: 0;
-    right: -30rem;
-    /* right: 0; */
+    /* right: -30rem; */
+    right: 0;
     background-color: var(--secondary-color);
     text-align: center;
   }
@@ -176,5 +176,16 @@ a {
     height: 0.3rem;
     background-color: #fff;
     transition: all 0.2s ease-in-out;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .nav__item {
+    margin-bottom: 3vh;
+    margin-left: 6vw;
   }
 }
