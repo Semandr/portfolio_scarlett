@@ -230,6 +230,13 @@ a {
 }
 
 /**************************** Media ***********************/
+@media screen and (max-width: 900px) {
+  .hero {
+    background-position: 100%;
+    align-items: flex-end;
+  }
+}
+
 @media screen and (max-width: 610px) {
   /******************MAIN NAV HEADER  */
 
@@ -316,5 +323,9 @@ a {
   }
   .nav__item:nth-child(6) {
     transition: all 0.3s ease-in-out /* delay */ 0.95s;
+  }
+
+  .hero {
+    background-position: 80%;
   }
 }
