@@ -21,6 +21,8 @@ body {
   font-family: "Baloo Tamma 2", cursive;
   line-height: 1.8;
   display: flex;
+
+  overflow: hidden;
 }
 
 ul {
@@ -165,6 +167,20 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+
+  animation: hero 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes hero {
+  0% {
+    transform: translateX(100rem) rotate(360deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .hero__title {
