@@ -187,6 +187,7 @@ a {
   color: #fff;
 
   position: relative;
+  z-index: 1;
 }
 
 .hero__link:link::after,
@@ -199,14 +200,17 @@ a {
   width: 100%;
   background-color: var(--primary-color);
   transform: scaleX(0);
-  transform-origin: right;
+  /* transform-origin: right; */
 
   transition: all 0.3s ease-in-out;
+
+  z-index: -1;
 }
 
 .hero__link:hover::after,
 .hero__link:active::after {
-  transform: scaleX(1s);
+  transform: scaleX(1);
+  /* transform-origin: left; */
 }
 
 /**************************** Media ***********************/
