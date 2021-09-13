@@ -37,7 +37,7 @@ a {
 /********************** Aside Styling ******************/
 
 .aside__content {
-  height: 100vh;
+  min-height: 100vh;
   width: 8rem;
   display: flex;
   flex-direction: column;
@@ -227,6 +227,45 @@ a {
 .hero__link:active::after {
   transform: scaleX(1);
   /* transform-origin: left; */
+}
+
+/**************************** WORK SECTION ***********************/
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--tertiary-color);
+}
+
+.work__item {
+  padding: 2rem;
+  flex-basis: 40rem;
+  flex-grow: 1;
+
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+.work__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  transition: filter 0.35s ease;
+}
+
+.work__image:hover,
+.work__image:active {
+  filter: sepia(80%);
 }
 
 /**************************** Media ***********************/
