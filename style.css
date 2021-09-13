@@ -230,12 +230,18 @@ a {
 }
 
 /**************************** WORK SECTION ***********************/
+.work {
+  background-color: var(--tertiary-color);
+}
 .work__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
   background-color: var(--tertiary-color);
+
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .work__item {
