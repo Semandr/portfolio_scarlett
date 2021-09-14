@@ -295,7 +295,7 @@ a {
 .about__content {
   flex-basis: 40rem;
   flex-grow: 1;
-  /* padding: 2rem; */
+  padding: 2rem;
 }
 
 .about__photo {
@@ -371,28 +371,75 @@ a {
 
 .services {
   background-color: var(--primary-color);
-  /* display: flex; */
 }
 
 .services__list {
-  border: 1px solid white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
-  padding: 6rem 2rem 2rem;
+  padding: 6rem 0;
   margin: 0 auto;
   max-width: 150rem;
 }
 
 .services__item {
-  border: 1px solid silver;
   padding: 4rem;
-  margin: 0 2rem 4rem;
+  margin: 2rem;
 
   flex-basis: 40rem;
   flex-grow: 1;
+
+  background-color: var(--secondary-color);
+  border-right: 0.2rem solid var(--secondary-color);
+  border-bottom: 0.2rem solid var(--secondary-color);
+  border-left: 0.2rem solid var(--secondary-color);
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.services__item::after {
+  position: absolute;
+
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--primary-color);
+
+  transform: scaleX(0);
+  transition: transform 0.35s cubic-bezier(1, 0, 0, 1);
+
+  z-index: -1;
+}
+
+.services__item:hover::after,
+.services__item:active::after {
+  transform: scaleX(1);
+}
+
+.services__icon {
+  margin-bottom: 2rem;
+
+  font-size: 3rem;
+  color: #fff;
+}
+
+.services__title {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.services__text {
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
+  color: #fff;
 }
 
 /**************************** Media ***********************/
@@ -405,6 +452,14 @@ a {
 
 @media screen and (max-width: 610px) {
   /******************MAIN NAV HEADER  */
+
+  .aside__content {
+    width: 10vw;
+  }
+
+  .social__icon {
+    font-size: 2rem;
+  }
 
   .header__content {
     position: absolute;
@@ -493,5 +548,18 @@ a {
 
   .hero {
     background-position: 80%;
+  }
+
+  .services__item {
+    padding: calc(1rem + 2vw);
+  }
+
+  .services__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .services__text {
+    font-size: 1.6rem;
   }
 }
