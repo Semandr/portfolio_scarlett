@@ -455,7 +455,7 @@ a {
 .design,
 .coding {
   padding: calc(1rem + 2vw);
-  text-transform: uppercase;
+
   flex-basis: 40rem;
   flex-grow: 1;
 }
@@ -463,15 +463,12 @@ a {
 .coding__title {
   font-size: 3rem;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 .design__title_small,
 .coding__title_small {
   font-size: 2rem;
   color: #fff;
-}
-.design__list {
-}
-.design__item {
 }
 .design__progress,
 .coding__progress {
@@ -544,6 +541,53 @@ a {
   }
   100% {
     width: 85%;
+  }
+}
+
+.coding__progress_html {
+  animation: html 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.coding__progress_js {
+  animation: js 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.coding__progress_python {
+  animation: python 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes python {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.coding__progress_sql {
+  animation: sql 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes sql {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
   }
 }
 
@@ -659,12 +703,16 @@ a {
     padding: calc(1rem + 2vw);
   }
 
-  .services__title {
+  .services__title,
+  .design__title,
+  .coding__title {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
 
-  .services__text {
+  .services__text,
+  .design__title_small,
+  .coding__title_small {
     font-size: 1.6rem;
   }
 }
