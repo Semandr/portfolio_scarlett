@@ -442,6 +442,111 @@ a {
   color: #fff;
 }
 
+/******************************** SKILLS ***************************/
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: calc(1rem + 2vw);
+  background-color: var(--tertiary-color);
+}
+
+.design,
+.coding {
+  padding: calc(1rem + 2vw);
+  text-transform: uppercase;
+  flex-basis: 40rem;
+  flex-grow: 1;
+}
+.design__title,
+.coding__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.design__title_small,
+.coding__title_small {
+  font-size: 2rem;
+  color: #fff;
+}
+.design__list {
+}
+.design__item {
+}
+.design__progress,
+.coding__progress {
+  position: relative;
+  display: block; /*Da controllare se serve !*/
+
+  /*********************************************************************/
+
+  padding: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+
+  width: 100%;
+
+  margin-bottom: 2rem;
+}
+
+.design__progress span,
+.coding__progress span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2rem;
+  /* width: 5rem; */
+  background-color: var(--secondary-color);
+
+  border-radius: 1rem;
+}
+.design__progress_web {
+  animation: web 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes web {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.design__progress_print {
+  animation: print 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+@keyframes print {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.design__progress_logo {
+  animation: logo 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes logo {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.design__progress_graphic {
+  animation: graphic 3s infinite cubic-bezier(1, 0, 0, 1);
+}
+
+@keyframes graphic {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
 /**************************** Media ***********************/
 @media screen and (max-width: 900px) {
   .hero {
