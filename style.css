@@ -593,6 +593,24 @@ a {
 
 /******************** Testimonials section *****************/
 
+.testimonials {
+}
+
+.testimonials__list {
+}
+.testimonials__card {
+}
+.testimonials__img-box {
+}
+.testimonials__image {
+}
+.testimonials__content {
+}
+.testimonials__title {
+}
+.testimonials__text {
+}
+
 /**************************** Media ***********************/
 @media screen and (max-width: 900px) {
   .hero {
