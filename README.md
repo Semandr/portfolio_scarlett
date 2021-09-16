@@ -16,3 +16,5 @@ But since this is only an educational project, and not my personal one, I left m
 
 Link to this site hosted on GitHub Pages
 [a link](https://semandr.github.io/portfolio_scarlett/index.html)
+
+PS. Tested in all modern browsers. As always, Internet Explorer :-1:
