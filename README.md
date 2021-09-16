@@ -14,7 +14,7 @@ Also, all files are not compressed into one line, and the DRY principle is not u
 
 But since this is only an educational project, and not my personal one, I left many things "as is".
 
-Link to this site hosted on GitHub Pages
-[a link](https://semandr.github.io/portfolio_scarlett/index.html)
+Link to this site hosted on GitHub Pages =====>
+[Scarlett Portfolio](https://semandr.github.io/portfolio_scarlett/index.html)
 
 PS. Tested in all modern browsers. As always, Internet Explorer :-1:
