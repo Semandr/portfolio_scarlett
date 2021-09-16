@@ -656,11 +656,59 @@ a {
   font-size: 1.5rem;
 }
 
+/****************** Contact Section *******************/
+.contact__content {
+  height: 100vh;
+  background-image: url(img/full-bg-03.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.contact__form {
+  flex-basis: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-color-m);
+}
+
+.form__input,
+.form__textarea,
+.form__input:focus-visible,
+.form__textarea:focus-visible {
+  color: #fff;
+  background: transparent;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.form__textarea {
+  height: 25vh;
+  resize: none;
+}
+.form__input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 /**************************** Media ***********************/
 @media screen and (max-width: 900px) {
   .hero {
     background-position: 100%;
     align-items: flex-end;
+  }
+  .contact__content {
+    background-position: left;
   }
 }
 
@@ -781,11 +829,18 @@ a {
   .coding__title_small {
     font-size: 1.6rem;
   }
+
+  .contact__content {
+    background-position: left;
+  }
 }
 
 @media screen and (max-width: 460px) {
   /**************** Testimonias section *********************/
   .testimonials__content {
     top: 0;
+  }
+  .contact__content {
+    background-position: left;
   }
 }
