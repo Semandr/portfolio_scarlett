@@ -594,21 +594,66 @@ a {
 /******************** Testimonials section *****************/
 
 .testimonials {
+  background: var(--secondary-color);
 }
 
 .testimonials__list {
+  max-width: 150rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: calc(1rem + 2vw);
+  color: #fff;
 }
 .testimonials__card {
+  position: relative;
+
+  padding: 2vw;
+  flex-basis: 50rem;
+  flex-grow: 1;
+  overflow: hidden;
 }
 .testimonials__img-box {
+  width: 100%;
+  height: 100%;
+  /* transform: scale(1); */
 }
 .testimonials__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  object-fit: cover;
+
+  transition: all 0.35s ease-in-out;
 }
 .testimonials__content {
+  position: absolute;
+  width: 80%;
+  top: 60%;
+  left: 0;
+  padding: 1.5rem;
+  background: var(--tertiary-color-m);
+  border-radius: 1rem;
+
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.35s ease-in-out;
+}
+.testimonials__card:hover .testimonials__content,
+.testimonials__card:active .testimonials__content {
+  transform: scaleY(1);
 }
 .testimonials__title {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .testimonials__text {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
 }
 
 /**************************** Media ***********************/
@@ -725,7 +770,8 @@ a {
 
   .services__title,
   .design__title,
-  .coding__title {
+  .coding__title,
+  .testimonials__title {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -734,5 +780,12 @@ a {
   .design__title_small,
   .coding__title_small {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  /**************** Testimonias section *********************/
+  .testimonials__content {
+    top: 0;
   }
 }
