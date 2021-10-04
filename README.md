@@ -1,4 +1,4 @@
-## An example of a portfolio site for a photographer and web designer.
+# An example of a portfolio site for a photographer and web designer.
 
 This site was created during the HTML and CSS course: "The Modern Flexbox, Grid, Sass & Animations Developer Course"
 
